@@ -1,0 +1,2 @@
+C:\Users\ChaseFlorell\Projects\Xamarin.Forums.Examples\ListView.ExpandingFooter\ListView.ExpandingFooter\ListView.ExpandingFooter.iOS\obj\iPhone\Debug\
+C:\Users\ChaseFlorell\Projects\Xamarin.Forums.Examples\ListView.ExpandingFooter\ListView.ExpandingFooter\ListView.ExpandingFooter.iOS\obj\iPhone\Debug\ListView.ExpandingFooter.iOS.csprojResolveAssemblyReference.cache

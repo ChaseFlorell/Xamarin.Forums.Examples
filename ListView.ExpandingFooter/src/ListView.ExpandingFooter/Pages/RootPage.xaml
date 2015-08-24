@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ListView.ExpandingFooter.Pages.RootPage" 
+             Padding="0">
+  <ListView x:Name="MyListView" 
+            VerticalOptions="Fill" 
+            ItemsSource="{Binding People}" 
+            RowHeight="40" 
+            SeparatorVisibility="None">
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <StackLayout Orientation="Horizontal" 
+                       BackgroundColor="Green" 
+                       Spacing="0">
+            <Label Text="{Binding FirstName}" />
+            <Label Text="{Binding LastName}"/>
+          </StackLayout>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+    <ListView.Footer>
+      <StackLayout x:Name="FooterWrapper"
+                   Spacing="0"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Fill"
+                   BackgroundColor="Yellow">
+        <Label Text="Centered Text"
+               TextColor="Black"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand"/>
+        <Button x:Name="Button"
+                Text="Add a person" 
+                Command="{Binding AddPersonCommand}" 
+                CommandParameter="{Binding .}" />
+      </StackLayout>
+    </ListView.Footer>
+  </ListView>
+</ContentPage>
